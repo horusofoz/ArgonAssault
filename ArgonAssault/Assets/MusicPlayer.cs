@@ -5,8 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class MusicPlayer : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
+    private void Awake()
+    {
+        DontDestroyOnLoad(this.gameObject);
+    }
+
+    // Use this for initialization
+    void Start ()
+    {    
         Invoke("LoadFirstScene", 2f);
 	}
 	
