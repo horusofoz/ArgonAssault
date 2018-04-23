@@ -18,6 +18,6 @@ public class Player : MonoBehaviour {
     {
         float xThrow = CrossPlatformInputManager.GetAxis("Horizontal");
         float xOffsetThisFrame = xThrow * xSpeed * Time.deltaTime;
-        print(xOffsetThisFrame);
+        print(xOffsetThisFrame); 
 	}
 }
