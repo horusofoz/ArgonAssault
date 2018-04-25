@@ -4,24 +4,33 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
-public class Player : MonoBehaviour {
+public class PlayerController : MonoBehaviour {
 
-    [Tooltip("In ms^-1")][SerializeField] float speed = 10f;
+    [Header("General")]
+    [Tooltip("In ms^-1")][SerializeField] float ControlSpeed = 10f;
     [Tooltip("In ms")] [SerializeField] float xRange = 8f;
     [Tooltip("In ms")] [SerializeField] float yRange = 4.5f;
 
+    [Header("Screen-position Based")]
     [SerializeField] float positionPitchFactor = -5f;
     [SerializeField] float controlPitchFactor = -20f;
+
+    [Header("Control-throw Based")]
     [SerializeField] float positionYawFactor = 6.5f;
     [SerializeField] float ControlRollFactor = -20f;
 
     float xThrow, yThrow;
+
+    bool isControlEnabled = true;
 	
 	// Update is called once per frame
 	void Update ()
     {
-        ProcessTranslation();
-        ProcessRotation();
+        if(isControlEnabled)
+        {
+            ProcessTranslation();
+            ProcessRotation();
+        }
     }
 
     private void ProcessRotation()
@@ -42,8 +51,8 @@ public class Player : MonoBehaviour {
         // Movement
         xThrow = CrossPlatformInputManager.GetAxis("Horizontal");
         yThrow = CrossPlatformInputManager.GetAxis("Vertical");
-        float xOffset = xThrow * speed * Time.deltaTime;
-        float yOffest = yThrow * speed * Time.deltaTime;
+        float xOffset = xThrow * ControlSpeed * Time.deltaTime;
+        float yOffest = yThrow * ControlSpeed * Time.deltaTime;
 
         float rawNewXPos = transform.localPosition.x + xOffset;
         float clampedXpos = Mathf.Clamp(rawNewXPos, -xRange, xRange);
@@ -53,5 +62,11 @@ public class Player : MonoBehaviour {
 
         // Update position
         transform.localPosition = new Vector3(clampedXpos, clampedYPos, transform.localPosition.z);
+    }
+
+    private void OnPlayerDeath() // Called by string reference
+    {
+        print("Player dead");
+        isControlEnabled = false;
     }
 }
