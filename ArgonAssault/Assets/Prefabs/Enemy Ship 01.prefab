@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4590883244278806}
   - component: {fileID: 33452840626504242}
   - component: {fileID: 23570070677323966}
+  - component: {fileID: 114313680763856982}
   m_Layer: 0
   m_Name: Enemy Ship 01
   m_TagString: Untagged
@@ -82,3 +83,15 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1378817631518148}
   m_Mesh: {fileID: 4300006, guid: ec2ed6fafcc53c64ba923b9ef7d5749f, type: 3}
+--- !u!114 &114313680763856982
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1378817631518148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7257ff4f22875f940bb6a73002d3dd0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathFX: {fileID: 1864347392933534, guid: fc1fc4b061d82bd4698a1409118f0e02, type: 2}
