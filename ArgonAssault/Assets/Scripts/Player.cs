@@ -60,4 +60,15 @@ public class Player : MonoBehaviour {
         // Update position
         transform.localPosition = new Vector3(clampedXpos, clampedYPos, transform.localPosition.z);
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        print("Player collided something");
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        string name = other.gameObject.name;
+        print("Player triggered " + name);
+    }
 }
