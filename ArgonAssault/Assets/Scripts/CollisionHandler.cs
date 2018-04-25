@@ -11,8 +11,8 @@ public class CollisionHandler : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        StartDeathSequence();
-        deathFX.SetActive(true);
+        //StartDeathSequence();
+        //deathFX.SetActive(true);
     }
 
     private void StartDeathSequence()
