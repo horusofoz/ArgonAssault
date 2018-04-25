@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour {
     [Tooltip("In ms^-1")][SerializeField] float ControlSpeed = 10f;
     [Tooltip("In ms")] [SerializeField] float xRange = 8f;
     [Tooltip("In ms")] [SerializeField] float yRange = 4.5f;
+    
 
     [Header("Screen-position Based")]
     [SerializeField] float positionPitchFactor = -5f;

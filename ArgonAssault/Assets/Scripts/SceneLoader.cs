@@ -8,6 +8,7 @@ public class SceneLoader : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
+        DontDestroyOnLoad(this.gameObject);
         Invoke("LoadFirstScene", 2f);
     }
 
@@ -15,5 +16,11 @@ public class SceneLoader : MonoBehaviour {
     void LoadFirstScene()
     {
         SceneManager.LoadScene(1);
+    }
+
+    // Load same scene
+    void LoadSameScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

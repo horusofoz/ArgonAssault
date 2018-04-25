@@ -153,9 +153,23 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1761262988363236, guid: b9d202e4305ae094ebb94cbb6c0c5a4b, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114824346335378478, guid: b9d202e4305ae094ebb94cbb6c0c5a4b,
+        type: 2}
+      propertyPath: deathFX
+      value: 
+      objectReference: {fileID: 54111052}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b9d202e4305ae094ebb94cbb6c0c5a4b, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &54111052 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1761262988363236, guid: b9d202e4305ae094ebb94cbb6c0c5a4b,
+    type: 2}
+  m_PrefabInternal: {fileID: 11866724}
 --- !u!4 &409296126 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4359838424181504, guid: b9d202e4305ae094ebb94cbb6c0c5a4b,
