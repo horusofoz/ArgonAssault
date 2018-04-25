@@ -156,6 +156,48 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b9d202e4305ae094ebb94cbb6c0c5a4b, type: 2}
   m_IsPrefabParent: 0
+--- !u!1001 &97196953
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4095129564083470, guid: fc1fc4b061d82bd4698a1409118f0e02, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 65
+      objectReference: {fileID: 0}
+    - target: {fileID: 4095129564083470, guid: fc1fc4b061d82bd4698a1409118f0e02, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4095129564083470, guid: fc1fc4b061d82bd4698a1409118f0e02, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 55.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 4095129564083470, guid: fc1fc4b061d82bd4698a1409118f0e02, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4095129564083470, guid: fc1fc4b061d82bd4698a1409118f0e02, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4095129564083470, guid: fc1fc4b061d82bd4698a1409118f0e02, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4095129564083470, guid: fc1fc4b061d82bd4698a1409118f0e02, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4095129564083470, guid: fc1fc4b061d82bd4698a1409118f0e02, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: fc1fc4b061d82bd4698a1409118f0e02, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &409296125 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1611624582168992, guid: b9d202e4305ae094ebb94cbb6c0c5a4b,
