@@ -16,12 +16,6 @@ public class Player : MonoBehaviour {
     [SerializeField] float ControlRollFactor = -20f;
 
     float xThrow, yThrow;
-
-    // Use this for initialization
-    void Start ()
-    {
-		
-	}
 	
 	// Update is called once per frame
 	void Update ()
@@ -59,16 +53,5 @@ public class Player : MonoBehaviour {
 
         // Update position
         transform.localPosition = new Vector3(clampedXpos, clampedYPos, transform.localPosition.z);
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        print("Player collided something");
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        string name = other.gameObject.name;
-        print("Player triggered " + name);
     }
 }
