@@ -161,6 +161,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 686afe0daad7a104897f48dbc6332ed1, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &113446077 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1427773226860812, guid: b9d202e4305ae094ebb94cbb6c0c5a4b,
+    type: 2}
+  m_PrefabInternal: {fileID: 723043241}
 --- !u!1 &369791937
 GameObject:
   m_ObjectHideFlags: 0
@@ -594,6 +599,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1685571015}
     m_Modifications:
+    - target: {fileID: 114729469439006006, guid: b9d202e4305ae094ebb94cbb6c0c5a4b,
+        type: 2}
+      propertyPath: guns.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4359838424181504, guid: b9d202e4305ae094ebb94cbb6c0c5a4b, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -631,6 +641,24 @@ Prefab:
       propertyPath: looping
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1427773226860812, guid: b9d202e4305ae094ebb94cbb6c0c5a4b, type: 2}
+      propertyPath: m_Name
+      value: Gun Left
+      objectReference: {fileID: 0}
+    - target: {fileID: 1004097498399832, guid: b9d202e4305ae094ebb94cbb6c0c5a4b, type: 2}
+      propertyPath: m_Name
+      value: Gun Right
+      objectReference: {fileID: 0}
+    - target: {fileID: 114729469439006006, guid: b9d202e4305ae094ebb94cbb6c0c5a4b,
+        type: 2}
+      propertyPath: guns.Array.data[0]
+      value: 
+      objectReference: {fileID: 113446077}
+    - target: {fileID: 114729469439006006, guid: b9d202e4305ae094ebb94cbb6c0c5a4b,
+        type: 2}
+      propertyPath: guns.Array.data[1]
+      value: 
+      objectReference: {fileID: 1766724795}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b9d202e4305ae094ebb94cbb6c0c5a4b, type: 2}
   m_IsPrefabParent: 0
@@ -1419,6 +1447,11 @@ MonoBehaviour:
   deathFX: {fileID: 1864347392933534, guid: fc1fc4b061d82bd4698a1409118f0e02, type: 2}
   parent: {fileID: 1722502126}
   scorePerHit: 100
+--- !u!1 &1766724795 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1004097498399832, guid: b9d202e4305ae094ebb94cbb6c0c5a4b,
+    type: 2}
+  m_PrefabInternal: {fileID: 723043241}
 --- !u!1 &1857478887
 GameObject:
   m_ObjectHideFlags: 0
