@@ -5,8 +5,6 @@ using UnityEngine.UI;
 
 public class ScoreBoard : MonoBehaviour {
 
-    [SerializeField] int scorePerHit = 100;
-
     int score;
     Text scoreText;
 
@@ -14,12 +12,12 @@ public class ScoreBoard : MonoBehaviour {
 	void Start ()
     {
         scoreText = GetComponent<Text>();
-        scoreText.text = score.ToString("000000000");
+        scoreText.text = score.ToString("00000000");
 	}
 	
-	public void ScoreHit()
+	public void ScoreHit(int scorePerHit)
     {
         score = score + scorePerHit;
-        scoreText.text = score.ToString("000000000");
+        scoreText.text = score.ToString("00000000"); 
     }
 }
