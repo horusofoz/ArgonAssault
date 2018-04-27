@@ -15,7 +15,7 @@ public class ScoreBoard : MonoBehaviour {
         scoreText.text = score.ToString("00000000");
 	}
 	
-	public void ScoreHit(int scorePerHit)
+	public void ScoreKill(int scorePerHit)
     {
         score = score + scorePerHit;
         scoreText.text = score.ToString("00000000"); 
